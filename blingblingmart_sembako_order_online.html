@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f47a12">
+<title>Bling-Bling Mart | Belanja Sembako Online</title>
+<style>
+:root{--orange:#f47a12;--orange2:#ff9b35;--ink:#242424;--muted:#6c6c6c;--cream:#fff8ef;--line:#eee5dc;--green:#159447}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+header{background:linear-gradient(130deg,#ff861b,#ffb04f);color:#fff;padding:18px 18px 38px;border-radius:0 0 28px 28px}
+nav,.hero,main{max-width:1100px;margin-left:auto;margin-right:auto}nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:900;font-size:22px;letter-spacing:-.6px}.brand span{color:#fff4d7}.navbtn{color:white;border:1px solid #ffffff88;border-radius:20px;padding:9px 13px;text-decoration:none;font-size:12px;font-weight:bold}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center;margin-top:36px}
+.badge{display:inline-block;background:#ffffff30;padding:8px 12px;border-radius:30px;font-size:12px;font-weight:bold;letter-spacing:1px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.04;letter-spacing:-1.6px;margin:16px 0}
+.hero p{line-height:1.65;color:#fffaf4;max-width:550px}
+.btn{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:12px;padding:13px 17px;text-decoration:none;font-weight:800;cursor:pointer}
+.btn-dark{background:#252525;color:#fff}.btn-orange{background:var(--orange);color:#fff}.btn-green{background:var(--green);color:white;width:100%;margin-top:17px}
+.hero-box{background:#fff;color:var(--ink);padding:24px;border-radius:23px;box-shadow:0 14px 35px #91450024}
+.hero-box .emoji{font-size:45px}.hero-box h3{margin:12px 0 8px}.hero-box p{font-size:14px;color:var(--muted);margin:0}
+main{padding:30px 18px 58px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:10px 0 18px}
+h2{font-size:27px;letter-spacing:-.5px;margin:0}.section-head p,.muted{font-size:14px;color:var(--muted);line-height:1.5;margin:7px 0 0}
+.search{width:100%;max-width:330px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font:inherit}
+.categories{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.pill{border:1px solid var(--line);border-radius:25px;padding:9px 14px;background:white;color:#555;font-weight:bold;cursor:pointer}.pill.active{background:#fff0df;border-color:#ffc184;color:#c85b00}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{border:1px solid var(--line);border-radius:18px;padding:15px;display:flex;flex-direction:column;min-height:260px;box-shadow:0 5px 18px #34200b07}
+.prod-icon{height:68px;border-radius:14px;background:var(--cream);display:grid;place-items:center;font-size:34px;margin-bottom:13px}
+.product h3{font-size:16px;margin:0 0 8px}.desc{font-size:13px;color:var(--muted);line-height:1.5;flex:1;margin:0 0 12px}.price{font-size:20px;font-weight:900;margin-bottom:12px}.price small{font-size:11px;color:var(--muted);font-weight:normal}
+.product .btn{width:100%;padding:11px}
+.order-area{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:42px}.panel{border:1px solid var(--line);border-radius:20px;padding:22px;background:white}.panel h2{font-size:24px}.hint{color:var(--muted);font-size:13px;line-height:1.5;margin:8px 0 18px}
+label{display:block;font-size:13px;font-weight:bold;margin:13px 0 7px}input,select,textarea{width:100%;padding:12px 13px;border:1px solid #e4ddd5;border-radius:11px;font:inherit;background:white}textarea{min-height:75px;resize:vertical}
+.cartline{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.cartline button{border:0;background:#fff0df;color:#b84f00;border-radius:8px;padding:7px 9px;cursor:pointer}
+.info{background:var(--cream);padding:18px;border-radius:16px;margin-top:16px}.info p{font-size:13px;line-height:1.6;color:var(--muted)}.steps{padding-left:20px;font-size:14px;color:#555;line-height:1.9}
+footer{background:#252525;color:#ddd;text-align:center;padding:24px 15px;font-size:12px;line-height:1.8}footer strong{color:white}
+@media(max-width:800px){.hero,.order-area{grid-template-columns:1fr}.hero{margin-top:25px}.hero-box{max-width:450px}.grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:stretch;flex-direction:column}.search{max-width:none}}
+@media(max-width:420px){.brand{font-size:19px}.grid{gap:9px}.product{padding:11px;min-height:265px}.product h3{font-size:14px}.price{font-size:18px}.navbtn{font-size:10px;padding:8px}}
+</style>
+</head>
+<body>
+<header>
+<nav><div class="brand">🛒 Bling-Bling <span>Mart</span></div><a class="navbtn" href="#pesan">PESAN ONLINE ↓</a></nav>
+<section class="hero">
+<div><span class="badge">SEMBAKO & KEBUTUHAN DAPUR</span><h1>Belanja hemat,<br>harga bersahabat.</h1>
+<p>Kebutuhan sehari-hari lebih praktis. Pilih produk, masukkan jumlah belanja, lalu kirim pesanan langsung ke WhatsApp admin Bling-Bling Mart.</p>
+<a class="btn btn-dark" href="#produk">Mulai Belanja</a></div>
+<div class="hero-box"><div class="emoji">🥚 🛒 🥬</div><h3>Belanja kebutuhan rumah jadi mudah</h3><p>Pilih barang favoritmu. Pesanan akan dikirim ke WhatsApp untuk dikonfirmasi oleh admin sebelum disiapkan.</p></div>
+</section></header>
+<main>
+<section id="produk"><div class="section-head"><div><h2>Produk Pilihan</h2><p>Harga di bawah adalah contoh awal—silakan konfirmasi ke admin. Kamu bisa menggantinya sesuai harga toko.</p></div><input class="search" id="search" placeholder="Cari beras, minyak, gula..."></div>
+<div class="categories"><button class="pill active" data-cat="Semua">Semua</button><button class="pill" data-cat="Bahan pokok">Bahan Pokok</button><button class="pill" data-cat="Minyak & bumbu">Minyak & Bumbu</button><button class="pill" data-cat="Makanan">Makanan</button><button class="pill" data-cat="Minuman">Minuman</button><button class="pill" data-cat="Lainnya">Lainnya</button></div>
+<div class="grid" id="grid"></div></section>
+<section class="order-area" id="pesan">
+<div class="panel"><h2>🧺 Keranjang Belanja</h2><p class="hint">Tambahkan produk dari katalog. Atur jumlahnya, lalu lanjutkan pesanan melalui WhatsApp.</p><div id="cart"><p class="muted">Keranjang masih kosong. Pilih produk terlebih dahulu.</p></div><div class="cartline"><strong>Perkiraan total</strong><strong id="total">Rp0</strong></div>
+<form id="orderForm"><label for="nama">Nama pemesan *</label><input id="nama" required placeholder="Nama kamu"><label for="alamat">Alamat pengantaran / patokan *</label><textarea id="alamat" required placeholder="Nama jalan, desa, patokan rumah"></textarea><label for="metode">Metode penerimaan *</label><select id="metode" required><option value="Diantar (konfirmasi ongkir)">Diantar (konfirmasi ongkir)</option><option value="Ambil sendiri di toko">Ambil sendiri di toko</option></select><label for="catatan">Catatan tambahan (opsional)</label><textarea id="catatan" placeholder="Contoh: beras merek tertentu, waktu pengantaran"></textarea><button class="btn btn-green" type="submit">🟢 Kirim Pesanan ke WhatsApp</button></form>
+</div>
+<aside class="panel"><h2>Bagaimana cara pesan?</h2><ol class="steps"><li>Pilih produk dan tekan <b>Tambah</b>.</li><li>Isi nama dan alamat atau pilih ambil sendiri.</li><li>Tekan tombol kirim pesanan.</li><li>WhatsApp terbuka dengan daftar belanja dan perkiraan total.</li><li>Tekan <b>Kirim</b> di WhatsApp. Admin mengonfirmasi stok, harga, dan ongkir.</li></ol><div class="info"><strong>Perlu bantuan belanja?</strong><p>Chat admin untuk mengecek ketersediaan barang, harga terbaru, dan biaya pengantaran.</p><a class="btn btn-dark" id="chat" href="#">Chat Admin WhatsApp</a></div></aside>
+</section>
+</main>
+<footer><strong>🛒 Bling-Bling Mart Desa Gunungjati</strong><br>Belanja hemat, harga bersahabat.<br>Harga dan ketersediaan barang dikonfirmasi oleh admin.</footer>
+<script>
+const WA_NUMBER="628812489544";
+const products=[
+{id:1,name:"Beras",cat:"Bahan pokok",icon:"🍚",price:65000,unit:"5 kg",desc:"Beras untuk kebutuhan makan keluarga."},
+{id:2,name:"Minyak Goreng",cat:"Minyak & bumbu",icon:"🫗",price:18000,unit:"1 liter",desc:"Minyak goreng untuk kebutuhan dapur."},
+{id:3,name:"Gula Pasir",cat:"Bahan pokok",icon:"🧂",price:17000,unit:"1 kg",desc:"Gula pasir untuk minuman dan masakan."},
+{id:4,name:"Telur Ayam",cat:"Bahan pokok",icon:"🥚",price:30000,unit:"1 kg",desc:"Telur untuk lauk dan kebutuhan harian."},
+{id:5,name:"Mi Instan",cat:"Makanan",icon:"🍜",price:3500,unit:"per bungkus",desc:"Mi instan praktis untuk persediaan rumah."},
+{id:6,name:"Tepung Terigu",cat:"Bahan pokok",icon:"🌾",price:12000,unit:"1 kg",desc:"Untuk membuat aneka makanan dan kue."},
+{id:7,name:"Kopi",cat:"Minuman",icon:"☕",price:1500,unit:"per sachet",desc:"Kopi sachet untuk teman beraktivitas."},
+{id:8,name:"Teh",cat:"Minuman",icon:"🍵",price:5000,unit:"per kotak",desc:"Teh untuk minuman hangat atau dingin."},
+{id:9,name:"Garam",cat:"Minyak & bumbu",icon:"🧂",price:3000,unit:"per bungkus",desc:"Bumbu dasar untuk masakan sehari-hari."},
+{id:10,name:"Kecap Manis",cat:"Minyak & bumbu",icon:"🫙",price:8000,unit:"per botol",desc:"Pelengkap masakan dan hidangan."},
+{id:11,name:"Air Mineral",cat:"Minuman",icon:"💧",price:4000,unit:"per botol",desc:"Air minum kemasan."},
+{id:12,name:"Sabun Cuci",cat:"Lainnya",icon:"🧼",price:5000,unit:"per bungkus",desc:"Kebutuhan kebersihan rumah."}
+];
+let cart={};let activeCat="Semua";
+const rupiah=n=>"Rp"+Number(n).toLocaleString("id-ID");
+function renderProducts(){const q=document.getElementById("search").value.toLowerCase();const grid=document.getElementById("grid");grid.innerHTML="";
+const filtered=products.filter(p=>(activeCat==="Semua"||p.cat===activeCat)&&p.name.toLowerCase().includes(q));
+if(!filtered.length){grid.innerHTML='<p class="muted">Produk tidak ditemukan.</p>';return}
+filtered.forEach(p=>{const el=document.createElement("article");el.className="product";el.innerHTML=`<div class="prod-icon">${p.icon}</div><h3>${p.name}</h3><p class="desc">${p.desc}</p><div class="price">${rupiah(p.price)} <small>/ ${p.unit}</small></div><button class="btn btn-orange" type="button">+ Tambah</button>`;el.querySelector("button").onclick=()=>{cart[p.id]=(cart[p.id]||0)+1;renderCart();};grid.appendChild(el);});}
+function renderCart(){const box=document.getElementById("cart");const items=Object.entries(cart).filter(([id,q])=>q>0);if(!items.length){box.innerHTML='<p class="muted">Keranjang masih kosong. Pilih produk terlebih dahulu.</p>';document.getElementById("total").textContent=rupiah(0);return}
+box.innerHTML="";let total=0;items.forEach(([id,q])=>{const p=products.find(x=>x.id===Number(id));total+=p.price*q;const row=document.createElement("div");row.className="cartline";row.innerHTML=`<div><b>${p.name}</b><br><span class="muted">${rupiah(p.price)} × ${q}</span></div><div><button type="button" aria-label="Kurangi">−</button> <b>${q}</b> <button type="button" aria-label="Tambah">+</button> <button type="button" aria-label="Hapus">Hapus</button></div>`;const bs=row.querySelectorAll("button");bs[0].onclick=()=>{cart[id]--;if(cart[id]<=0)delete cart[id];renderCart()};bs[1].onclick=()=>{cart[id]++;renderCart()};bs[2].onclick=()=>{delete cart[id];renderCart()};box.appendChild(row)});document.getElementById("total").textContent=rupiah(total);}
+document.querySelectorAll(".pill").forEach(b=>b.onclick=()=>{document.querySelectorAll(".pill").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeCat=b.dataset.cat;renderProducts()});
+document.getElementById("search").addEventListener("input",renderProducts);
+document.getElementById("orderForm").addEventListener("submit",e=>{e.preventDefault();const items=Object.entries(cart).filter(([id,q])=>q>0);if(!items.length){alert("Keranjang masih kosong. Tambahkan produk terlebih dahulu.");return}
+let total=0;const lines=items.map(([id,q])=>{const p=products.find(x=>x.id===Number(id));total+=p.price*q;return `- ${p.name} (${q} x ${rupiah(p.price)}/${p.unit}) = ${rupiah(p.price*q)}`});
+const msg=`Halo Admin Bling-Bling Mart, saya mau pesan sembako.%0A%0A*DETAIL PESANAN*%0ANama: ${encodeURIComponent(document.getElementById("nama").value.trim())}%0AAlamat/patokan: ${encodeURIComponent(document.getElementById("alamat").value.trim())}%0AMetode: ${encodeURIComponent(document.getElementById("metode").value)}%0A%0A*DAFTAR BELANJA*%0A${encodeURIComponent(lines.join("\n"))}%0A%0APerkiraan total barang: ${encodeURIComponent(rupiah(total))}%0ACatatan: ${encodeURIComponent(document.getElementById("catatan").value.trim()||"-")}%0A%0AMohon konfirmasi stok, harga akhir, dan ongkir. Terima kasih.`;
+window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`,"_blank");});
+document.getElementById("chat").href=`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent("Halo Admin Bling-Bling Mart, saya ingin bertanya tentang produk sembako.")}`;
+renderProducts();renderCart();
+</script>
+</body></html>
